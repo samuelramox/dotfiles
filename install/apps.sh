@@ -11,30 +11,39 @@ source ./install/utils.sh
 brew update
 brew upgrade
 
-# Install Homebrew formulas
-brew install git
-brew install nano
-brew install node
-brew install nvm
-brew install python
-brew install ruby
-brew install unrar
-brew install yarn
-brew install zsh
-
 # Install Homebrew taps
+brew tap heroku/brew
 brew tap homebrew/cask-drivers
 brew tap homebrew/cask-fonts
 brew tap homebrew/cask-versions
 brew tap homebrew/command-not-found
 
+# Install Homebrew formulas
+brew install curl
+brew install git
+brew install heroku
+brew install nano
+brew install node
+brew install nvm
+brew install postgresql
+brew install python
+brew install ruby
+brew install tmux
+brew install unrar
+brew install yarn
+brew install zsh
+
 # Install Homebrew casks
+brew cask install figma
 brew cask install font-jetbrains-mono
 brew cask install google-chrome
 brew cask install iina
 brew cask install iterm2
-brew cask install qbittorrent
+brew cask install mumble
+brew cask install postman
+brew cask install slack
 brew cask install visual-studio-code
+brew cask install zoomus
 
 # Install Homebrew Cask Upgrade
 # Check out https://github.com/buo/homebrew-cask-upgrade for more details

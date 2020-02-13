@@ -16,7 +16,6 @@ npm install -g eslint
 npm install -g gulp-cli
 npm install -g prettier
 npm install -g sass
-npm install -g typescript
 
 # Finish
 e_success "Finished npm packages settings."

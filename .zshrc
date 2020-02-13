@@ -12,8 +12,14 @@ export PATH="/usr/local/sbin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 
+# pyenv init
+eval "$(pyenv init -)"
+
 # Python 3 path
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# Ruby path
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # Support 256 colors path
 export TERM="xterm-256color"
