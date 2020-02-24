@@ -8,6 +8,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Homebrew path
 export PATH="/usr/local/sbin:$PATH"
 
+# curl path
+export PATH="/usr/local/opt/curl/bin:$PATH"
+
 # nvm path
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
@@ -164,7 +167,7 @@ alias npmupdate="npm update -g"
 alias uncommit="git reset HEAD~1"
 
 # Copy SSH
-alias copyssh="pbcopy < ~/.ssh/id_rsa.pub | echo '=> Public key copied to pasteboard.'"
+alias copyssh="pbcopy < ~/.ssh/id_ed25519.pub | echo '=> Public key copied to pasteboard.'"
 
 # Open .zshrc in VSCode
 alias zshconfig="code ~/.zshrc"
