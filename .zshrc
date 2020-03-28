@@ -23,9 +23,14 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Ruby path
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$(gem environment gemdir)/bin:$PATH"
 
 # Support 256 colors path
 export TERM="xterm-256color"
+
+# SSL path
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
 # ------------------------------ Theme ----------------------------------------
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -171,3 +176,9 @@ alias copyssh="pbcopy < ~/.ssh/id_ed25519.pub | echo '=> Public key copied to pa
 
 # Open .zshrc in VSCode
 alias zshconfig="code ~/.zshrc"
+
+# Open olist-services in iTerm2
+alias services="itermocil olist-services"
+
+# Open olist-services in tmux
+alias tservices="tmux new-session -d 'teamocil olist-services' \; attach"
