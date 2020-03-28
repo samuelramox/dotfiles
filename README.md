@@ -52,7 +52,7 @@ _Check linked files to more details._
 ## Installation:
 
 ```
-git clone https://github.com/samuelramox/dotfiles.git && cd dotfiles
+git clone -b work https://github.com/samuelramox/dotfiles.git && cd dotfiles
 
 ./install/setup.sh
 ```
@@ -61,7 +61,7 @@ git clone https://github.com/samuelramox/dotfiles.git && cd dotfiles
 
 ### Explaining the process
 
-The [setup.sh](install/setup.sh) process will ask if you want to install the following scripts, in this order:  
+The [setup.sh](install/setup.sh) process will ask if you want to install the following scripts, in this order:
 **Note:** I suggest you read these files and turn your preferences on/off before installation.
 
 - [apps.sh](install/apps.sh) - install _Homebrew_, _Homebrew Cask Upgrade_ and applications.
@@ -101,12 +101,13 @@ By default, word jumps (option + → or ←) and word deletions (option + backsp
 
 ### Visual Studio Code config:
 
-Code → Preference → Settings (or CMD + ,) and add or edit the following values:   
+Code → Preference → Settings (or CMD + ,) and add or edit the following values:
+
 ```json
-"editor.fontFamily": "JetBrains Mono",  
-"editor.fontLigatures": true, 
-"editor.fontSize": 13,  
-"terminal.integrated.fontFamily": "JetBrains Mono",    
+"editor.fontFamily": "JetBrains Mono",
+"editor.fontLigatures": true,
+"editor.fontSize": 13,
+"terminal.integrated.fontFamily": "JetBrains Mono",
 "terminal.integrated.fontSize": 13,
 ```
 
