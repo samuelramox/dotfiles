@@ -179,6 +179,3 @@ alias zshconfig="code ~/.zshrc"
 
 # Open olist-services in iTerm2
 alias services="itermocil olist-services"
-
-# Open olist-services in tmux
-alias tservices="tmux new-session -d 'teamocil olist-services' \; attach"
