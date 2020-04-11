@@ -4,104 +4,113 @@ This is a simple and flexible dotfiles and scripts to setup _macOS_.
 
 ## Table of Contents
 
-1. [What are dotfiles](#what-are-dotfiles)
-1. [Features](#features)
-1. [Installation](#installation)
-1. [Manual setup](#manual-setup)
-1. [Screenshot](#screenshot)
-1. [Resources](#resources)
+1. [What are dotfiles][]
+1. [Features][]
+1. [Installation][]
+1. [Manual setup][]
+1. [Screenshot][]
+1. [Resources][]
 
 ## What are dotfiles
 
-Dotfiles are configuration files on Unix-based systems. At first they are just hidden configuration files of the system (that's why the reason for starting with "."). However, we can use them to make it easier to configure our computers, with many advantages:
+Dotfiles are configuration files on Unix-based systems. At first they are just hidden configuration files of the system (that's why the reason for starting with `.`). However, we can use them to make it easier to configure our computers, with many advantages:
 
-- Easy to format a new computer;
-- Automation of tasks;
-- Easy maintenance;
-- Storage in remote locations (GitHub, Dropbox, etc);
-- Versioning;
-- Import to multiple computers;
-- Customize the terminal.
+- Easy to format a new computer
+- Automation of tasks
+- Easy maintenance
+- Storage in remote locations (GitHub, Dropbox, etc)
+- Versioning
+- Import to multiple computers
+- Customize the terminal
 
 ## Features
 
 _Check linked files to more details._
 
-### Installation files:
+### Installation files
 
-- [apps.sh](install/apps.sh) - installs _Homebrew_, _Homebrew Cask Upgrade_ and some _apps_.
-- [dock.sh](install/dock.sh) - macOS Dock items customization.
-- [dotfiles.sh](install/dotfiles.sh) - _Oh My Zsh_ installer, _.zshrc_ and _git_ configs.
-- [macos.sh](install/macos.sh) - macOS defaults configs.
-- [npm.sh](install/npm.sh) - install _npm_ packages.
-- [python.sh](install/python.sh) - install _Python_ packages.
-- [setup.sh](install/setup.sh) - main installer.
-- [util.sh](install/util.sh) - support functions for other installers.
+- [apps.sh][] - installs _Homebrew_, _Homebrew Cask Upgrade_ and some _apps_.
+- [dock.sh][] - macOS Dock items customization.
+- [dotfiles.sh][] - _Oh My Zsh_ installer, _.zshrc_ and _git_ configs.
+- [hostname.sh][] - change _hostname_ (MacBook name).
+- [macos.sh][] - macOS defaults configs.
+- [npm.sh][] - install _npm_ packages.
+- [python.sh][] - install _Python_ packages.
+- [setup.sh][] - main installer.
+- [ssh.sh][] - generate _SSH_.
+- [util.sh][] - support functions for other installers.
 
 **Note:** _These files will be discarded later._
 
-### Settings Files:
+### Settings Files
 
-- [.gitconfig](.gitconfig) - basic _git_ settings.
-- [.gitignore_global](.gitignore_global) - global _gitignore_.
-- [.zshrc](.zshrc) - terminal configs with aliases, paths, plugins and theme.
-- [com.googlecode.iterm2.plist](com.googlecode.iterm2.plist) - [iTerm2](https://iterm2.com) settings.
+- [.gitconfig][] - basic _git_ settings.
+- [.gitignore_global][] - global _gitignore_.
+- [.zshrc][] - terminal configs with aliases, paths, plugins and theme.
+- [com.googlecode.iterm2.plist][] - [iTerm2][] settings.
 
-**Note:** _These files are permanent._.
+**Note:** _These files are permanent_.
 
-## Installation:
+## Installation
 
-```
+```bash
 git clone -b work https://github.com/samuelramox/dotfiles.git && cd dotfiles
 
 ./install/setup.sh
 ```
 
-**Note:** You can also download a specific [release](https://github.com/samuelramox/dotfiles/releases).
+**Note:** You can also download a specific [release][].
 
 ### Explaining the process
 
-The [setup.sh](install/setup.sh) process will ask if you want to install the following scripts, in this order:
-**Note:** I suggest you read these files and turn your preferences on/off before installation.
+The [setup.sh][] process will ask if you want to install the following scripts, in this order:
 
-- [apps.sh](install/apps.sh) - install _Homebrew_, _Homebrew Cask Upgrade_ and applications.
+- [apps.sh][] - install _Homebrew_, _Homebrew Cask Upgrade_ and applications.
   I suggest you comment apps that should not be installed and include those that are not listed. This script will install in the following order:
 
-  - Install [Homebrew](https://brew.sh/);
-  - Homebrew formulas: [Git](https://git-scm.com), [Nano](https://www.nano-editor.org), [Node](https://nodejs.org/), [nvm](https://github.com/nvm-sh/nvm), [Python](https://www.python.org), [Ruby](https://www.ruby-lang.org/), [Unrar](https://www.rarlab.com/), [Yarn](https://yarnpkg.com/), [Zsh](https://www.zsh.org);
-  - Homebrew taps: [homebrew/fonts](https://github.com/Homebrew/homebrew-cask-fonts), [homebrew/drivers](https://github.com/Homebrew/homebrew-cask-drivers), [homebrew/versions](https://github.com/Homebrew/homebrew-cask-versions), [homebrew/command-not-found](https://github.com/Homebrew/homebrew-command-not-found);
-  - Homebrew casks: [Google Chrome](https://www.google.com/chrome/), [IINA](https://iina.io/), [iTerm2](https://iterm2.com), [JetBrains Mono](https://jetbrains.com/mono), [Postman](https://www.postman.com), [qBittorrent](https://www.qbittorrent.org/) and [Visual Studio Code](https://code.visualstudio.com);
-  - Install [Homebrew Cask Upgrade](https://github.com/buo/homebrew-cask-upgrade);
+  - Install [Homebrew][].
+  - Homebrew formulas: [curl][], [Git][], [iTermocil][], [Nano][], [Node][], [nvm][], [postgresql][], [Python][], [Ruby][], [tree][], [Unrar][], [Yarn][], [Zsh][].
+  - Homebrew taps: [homebrew/fonts][], [homebrew/drivers][], [homebrew/versions][], [homebrew/command-not-found][].
+  - Homebrew casks: [Google Chrome][], [IINA][], [iTerm2][], [JetBrains Mono][], [Postman][], [qBittorrent][] and [Visual Studio Code][].
+  - Install [Homebrew Cask Upgrade][].
 
-- [dotfiles.sh](install/dotfiles.sh) - install [Oh My Zsh](https://ohmyz.sh), some Zsh plugins, [Spaceship ZSH](https://denysdovhan.com/spaceship-prompt/) theme and set _iTerm2_ preferences. This step also opens [gitconfig](.gitconfig) so that the user can put his data.
-- [npm.sh](install/npm.sh) - install some npm packages.
-- [python.sh](install/python.sh) - install some Python packages.
-- [macos.sh](install/macos.sh) - set custom macOS preferences.
-- [dock.sh](install/dock.sh) - install [dockutil](https://github.com/kcrawford/dockutil) and set custom permanent apps in Dock. _Finder_ and _Recycle Bin_ are already permanent (unless you change this).
+- [dotfiles.sh][] - install [Oh My Zsh][], some Zsh plugins, [Spaceship ZSH][] theme and set _iTerm2_ preferences (including [Dracula Theme][]). This step also opens [.gitconfig][] so that the user can put his data.
+- [npm.sh][] - install some npm packages.
+- [python.sh][] - install some Python packages.
+- [macos.sh][] - set custom macOS preferences.
+- [dock.sh][] - install [dockutil][] and set custom permanent apps in Dock. _Finder_ and _Recycle Bin_ are already permanent (unless you change this).
 - Generate _SSH_.
 - Update _hostname_ (MacBook name).
 - Create a directory called _Developer_ in _Home_ directory for projects and development.
 - Cleanup cached downloads and remove the installation zip and folder.
 
+**Note:** I suggest you read these files and turn your preferences on/off before installation.
+
 ## Manual setup
 
-[iTerm2](https://iterm2.com) settings are changed by [dotfiles.sh](install/dotfiles.sh), but you can change them manually if you prefer. My [Visual Studio Code](https://code.visualstudio.com) settings are loaded by the [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) extension, so you will have to change manually or load your settings.
+[iTerm2][] settings are changed by [dotfiles.sh][] and it will look the same as [screenshot][], but you can change them manually if you prefer. My [Visual Studio Code][] settings are loaded by the [Settings Sync][] extension, so you will have to change manually or load your settings.
 
-### iTerm2 - Change the color theme:
+### iTerm2 - Change the color theme
 
-iTerm → Preferences → Profiles → Colors → Color presets. I use [Dracula](https://draculatheme.com) theme.
+You can use the default theme or switch to your preferred theme. I use [Dracula Theme][].
 
-### iTerm2 - Change font:
+`iTerm2 → Preferences → Profiles → Colors → Color presets`
 
-iTerm → Preferences → Profiles → Text → Change Font. I use [JetBrains Mono](https://jetbrains.com/mono) with 13px.
+### iTerm2 - Change font
 
-### iTerm2 - Enable word jumps and word deletion, aka natural text selection:
+You can use the default font or switch to your preferred font. I use [JetBrains Mono][] with 13px.
 
-By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to: iTerm → Preferences → Profiles → Keys → Load Preset... → Natural Text Editing
+`iTerm2 → Preferences → Profiles → Text → Change Font`
 
-### Visual Studio Code config:
+### iTerm2 - Enable word jumps and word deletion, aka natural text selection
 
-Code → Preference → Settings (or CMD + ,) and add or edit the following values:
+By default, word jumps (`option` + `→` or `←`) and word deletions (`option` + `backspace`) do not work.
+
+`iTerm2 → Preferences → Profiles → Keys → Load Preset... → Natural Text Editing`
+
+### Visual Studio Code - Config
+
+`Code → Preference → Settings (or CMD + ,) and add or edit the following values:`
 
 ```json
 "editor.fontFamily": "JetBrains Mono",
@@ -111,20 +120,89 @@ Code → Preference → Settings (or CMD + ,) and add or edit the following valu
 "terminal.integrated.fontSize": 13,
 ```
 
-## Screenshot:
+### Visual Studio Code - Configurable External Terminal
 
-Standard installation (can be configured):
-![macOS print](./images/macOS.png)
+If you are using [iTerm2][] as a default terminal, you need to configure this in [Visual Studio Code][].
 
-## Resources:
+`Code → Preference → Settings (or CMD + ,) and add or edit the following values:`
 
-- [Dotfiles Repositories](https://dotfiles.github.io/)
-- [Awesome Dotfiles](https://github.com/webpro/awesome-dotfiles)
-- [Homebrew](https://brew.sh/)
-- [Homebrew Cask Upgrade](https://github.com/buo/homebrew-cask-upgrade)
-- [Dockutil](https://github.com/kcrawford/dockutil)
-- [Sensible macOS defaults](https://github.com/mathiasbynens/dotfiles/blob/master/.macos)
-- [Awesome OSX Command Line](https://github.com/herrbischoff/awesome-osx-command-line)
-- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [Spaceship ZSH](https://denysdovhan.com/spaceship-prompt/)
-- [Dracula Theme](https://draculatheme.com)
+```json
+"terminal.external.osxExec": "iTerm.app",
+```
+
+## Screenshot
+
+Default install (can be configured):
+
+![macOS screenshot][]
+
+## Resources
+
+- [Dotfiles Repositories][]
+- [Awesome Dotfiles][]
+- [Homebrew][]
+- [Homebrew Cask Upgrade][]
+- [Dockutil][]
+- [Sensible macOS defaults][]
+- [Awesome OSX Command Line][]
+- [Oh My Zsh][]
+- [Spaceship ZSH][]
+- [Dracula Theme][]
+
+[.gitconfig]: .gitconfig
+[.gitignore_global]: .gitignore_global
+[.zshrc]: .zshrc
+[apps.sh]: install/apps.sh
+[awesome dotfiles]: https://github.com/webpro/awesome-dotfiles
+[awesome osx command line]: https://github.com/herrbischoff/awesome-osx-command-line
+[com.googlecode.iterm2.plist]: com.googlecode.iterm2.plist
+[curl]: https://curl.haxx.se
+[dock.sh]: install/dock.sh
+[dockutil]: https://github.com/kcrawford/dockutil
+[dotfiles.sh]: install/dotfiles.sh
+[dotfiles repositories]: https://dotfiles.github.io/
+[dracula theme]: https://draculatheme.com
+[features]: #features
+[git]: https://git-scm.com
+[google chrome]: https://www.google.com/chrome/
+[homebrew]: https://brew.sh/
+[homebrew cask upgrade]: https://github.com/buo/homebrew-cask-upgrade
+[homebrew/command-not-found]: https://github.com/Homebrew/homebrew-command-not-found
+[homebrew/drivers]: https://github.com/Homebrew/homebrew-cask-drivers
+[homebrew/fonts]: https://github.com/Homebrew/homebrew-cask-fonts
+[homebrew/versions]: https://github.com/Homebrew/homebrew-cask-versions
+[hostname.sh]: install/hostname.sh
+[iina]: https://iina.io/
+[installation]: #installation
+[iterm2]: https://iterm2.com
+[itermocil]: https://github.com/TomAnthony/itermocil
+[jetbrains mono]: https://jetbrains.com/mono
+[macos screenshot]: ./images/macOS.jpg 'macOS screenshot with default install'
+[macos.sh]: install/macos.sh
+[manual setup]: #manual-setup
+[nano]: https://www.nano-editor.org
+[node]: https://nodejs.org/
+[npm.sh]: install/npm.sh
+[nvm]: https://github.com/nvm-sh/nvm
+[oh my zsh]: https://ohmyz.sh
+[postgresql]: https://www.postgresql.org
+[postman]: https://www.postman.com
+[python.sh]: install/python.sh
+[python]: https://www.python.org
+[qbittorrent]: https://www.qbittorrent.org/
+[release]: https://github.com/samuelramox/dotfiles/releases
+[resources]: #resources
+[ruby]: https://www.ruby-lang.org/
+[screenshot]: #screenshot
+[sensible macos defaults]: https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+[settings sync]: https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
+[setup.sh]: install/setup.sh
+[spaceship zsh]: https://denysdovhan.com/spaceship-prompt/
+[ssh.sh]: install/ssh.sh
+[tree]: http://mama.indstate.edu/users/ice/tree/
+[unrar]: https://www.rarlab.com/
+[util.sh]: install/util.sh
+[visual studio code]: https://code.visualstudio.com
+[what are dotfiles]: #what-are-dotfiles
+[yarn]: https://yarnpkg.com/
+[zsh]: https://www.zsh.org

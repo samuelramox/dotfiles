@@ -29,9 +29,11 @@ brew install postgresql
 brew install python
 brew install ruby
 brew install tmux
+brew install tree
 brew install unrar
 brew install yarn
 brew install zsh
+brew install TomAnthony/brews/itermocil
 
 # Install Homebrew casks
 brew cask install figma

@@ -59,13 +59,7 @@ fi
 # Generate SSH
 seek_confirmation "Warning: This step generate SSH."
 if is_confirmed; then
-  ask "Please provide an email address: " && printf "\n"
-  ssh-keygen -t ed25519 -o -a 100 -C "$REPLY"
-  ssh-add -K ~/.ssh/id_rsa
-  touch ~/.ssh/config
-  echo -e "Host *\n UseKeychain yes\n AddKeysToAgent yes\n" >> ~/.ssh/config
-  e_success "Generated SSH key."
-  e_warning "After finishing the installation, use copyssh command to copy the SSH key to the clipboard."
+  bash ./install/ssh.sh
 else
   e_warning "Skipped SSH settings."
 fi
@@ -73,12 +67,7 @@ fi
 # Hostname
 seek_confirmation "Warning: This step update hostname (MacBook name)."
 if is_confirmed; then
-  ask "Please provide an hostname (MacBook name): " && printf "\n"
-  sudo scutil --set ComputerName "$REPLY"
-  sudo scutil --set LocalHostName "$REPLY"
-  sudo scutil --set HostName "$REPLY"
-  sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$REPLY"
-  e_success "Hostname is updated."
+  bash ./install/hostname.sh
 else
   e_warning "Skipped hostname settings."
 fi
@@ -89,7 +78,7 @@ mkdir ${HOME}/Developer
 
 # Cleanup cached downloads and remove the installation zip and folder
 e_header "Removing unnecessary files."
-brew cleanup && brew cleanup
+brew cleanup
 rm -rf ${HOME}/dotfiles.tar.gz
 rm -rf ${HOME}/dotfiles.zip
 rm -rf ${DOTFILES_DIRECTORY}

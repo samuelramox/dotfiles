@@ -1,12 +1,13 @@
-# Don't remove the quotation marks
+# Git config file
+# When edit, remove the < >
 
 [user]
-	name = "Your name here"
-	email = Your e-mail here
-
+	name = <Your name here>
+	email = <Your e-mail here>
 [github]
-	user = Your username here
-
+	user = <Your username here>
+[credential]
+	helper = osxkeychain
 [core]
 	editor = nano
 	excludesfile = ~/.gitignore_global
