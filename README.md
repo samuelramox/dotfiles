@@ -71,7 +71,7 @@ The [setup.sh][] process will ask if you want to install the following scripts, 
   - Install [Homebrew][].
   - Homebrew formulas: [curl][], [Git][], [iTermocil][], [Nano][], [Node][], [nvm][], [postgresql][], [Python][], [Ruby][], [tree][], [Unrar][], [Yarn][], [Zsh][].
   - Homebrew taps: [homebrew/fonts][], [homebrew/drivers][], [homebrew/versions][], [homebrew/command-not-found][].
-  - Homebrew casks: [Google Chrome][], [IINA][], [iTerm2][], [JetBrains Mono][], [Postman][], [qBittorrent][] and [Visual Studio Code][].
+  - Homebrew casks: [Google Chrome][], [IINA][], [iTerm2][], [JetBrains Mono][], [Mumble][], [Postman][], [qBittorrent][], [Slack][], [Visual Studio Code][] and [Zoom][].
   - Install [Homebrew Cask Upgrade][].
 
 - [dotfiles.sh][] - install [Oh My Zsh][], some Zsh plugins, [Spaceship ZSH][] theme and set _iTerm2_ preferences (including [Dracula Theme][]). This step also opens [.gitconfig][] so that the user can put his data.
@@ -180,6 +180,7 @@ Default install (can be configured):
 [macos screenshot]: ./images/macOS.jpg 'macOS screenshot with default install'
 [macos.sh]: install/macos.sh
 [manual setup]: #manual-setup
+[mumble]: https://www.mumble.com
 [nano]: https://www.nano-editor.org
 [node]: https://nodejs.org/
 [npm.sh]: install/npm.sh
@@ -197,6 +198,7 @@ Default install (can be configured):
 [sensible macos defaults]: https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 [settings sync]: https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
 [setup.sh]: install/setup.sh
+[slack]: https://slack.com/
 [spaceship zsh]: https://denysdovhan.com/spaceship-prompt/
 [ssh.sh]: install/ssh.sh
 [tree]: http://mama.indstate.edu/users/ice/tree/
@@ -205,4 +207,5 @@ Default install (can be configured):
 [visual studio code]: https://code.visualstudio.com
 [what are dotfiles]: #what-are-dotfiles
 [yarn]: https://yarnpkg.com/
+[zoom]: https://zoom.us
 [zsh]: https://www.zsh.org
