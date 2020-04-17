@@ -177,8 +177,8 @@ alias copyssh="pbcopy < ~/.ssh/id_ed25519.pub | echo '=> Public key copied to pa
 # Open .zshrc in VSCode
 alias zshconfig="code ~/.zshrc"
 
-# Open admin-services in iTerm2
+# Open iTermocil with admin-services
 alias adminapi="itermocil admin-services"
 
-# Open web-services in iTerm2
-alias services="itermocil olist-services"
+# Open iTermocil with web-services
+alias webapi="itermocil web-services"
