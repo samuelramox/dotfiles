@@ -182,3 +182,6 @@ alias adminapi="itermocil admin-services"
 
 # Open iTerm2 with web-services
 alias webapi="itermocil web-services"
+
+# Postgres fix
+alias psqlfix="rm /usr/local/var/postgres/postmaster.pid"
