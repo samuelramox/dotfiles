@@ -185,3 +185,6 @@ alias webapi="itermocil web-services"
 
 # Postgres fix
 alias psqlfix="rm /usr/local/var/postgres/postmaster.pid"
+
+# Django collectstatic
+alias collect="pipenv run python adminapp/manage.py collectstatic --noinput"
