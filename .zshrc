@@ -32,6 +32,9 @@ export TERM="xterm-256color"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
+# Gettext path
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+
 # ------------------------------ Theme ----------------------------------------
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
