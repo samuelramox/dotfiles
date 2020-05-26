@@ -11,6 +11,9 @@ export PATH="/usr/local/sbin:$PATH"
 # curl path
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
+# Gettext path
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+
 # nvm path
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
@@ -25,15 +28,12 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$(gem environment gemdir)/bin:$PATH"
 
-# Support 256 colors path
-export TERM="xterm-256color"
-
 # SSL path
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
-# Gettext path
-export PATH="/usr/local/opt/gettext/bin:$PATH"
+# Support 256 colors path
+export TERM="xterm-256color"
 
 # ------------------------------ Theme ----------------------------------------
 # Set name of the theme to load. Optionally, if you set this to "random"
