@@ -35,6 +35,7 @@ brew install zsh
 brew install TomAnthony/brews/itermocil
 
 # Install Homebrew casks
+brew cask install beekeeper-studio
 brew cask install font-jetbrains-mono
 brew cask install google-chrome
 brew cask install iina
