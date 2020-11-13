@@ -203,3 +203,6 @@ alias psqlfix="rm /usr/local/var/postgres/postmaster.pid"
 
 # Django collectstatic
 alias collect="pipenv run python adminapp/manage.py collectstatic --noinput"
+
+# Open Mumble in XYZ room
+alias mumble="open -a /Applications/Mumble.app 'mumble://mumble.olist.com/@Engineering/Times/su-financials/xyz_team_tech_prod_design?title=Root&version=1.2.0'"
