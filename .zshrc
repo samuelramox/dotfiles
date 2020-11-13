@@ -21,8 +21,10 @@ source $(brew --prefix nvm)/nvm.sh
 # pyenv init
 eval "$(pyenv init -)"
 
-# Python 3 path
+# Python 3 path (use only without pyenv)
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# export PATH=/Users/Users/.local/bin:$PATH
+# export PATH="/usr/local/opt/python@3.8/libexec/bin:$PATH"
 
 # Ruby path
 export PATH="/usr/local/opt/ruby/bin:$PATH"
@@ -34,6 +36,10 @@ export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
 # Support 256 colors path
 export TERM="xterm-256color"
+
+# SSL path
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
 # ------------------------------ Theme ----------------------------------------
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -180,10 +186,16 @@ alias copyssh="pbcopy < ~/.ssh/id_ed25519.pub | echo '=> Public key copied to pa
 # Open .zshrc in VSCode
 alias zshconfig="code ~/.zshrc"
 
-# Open iTerm2 with admin-services
+# Start Olist adminapp APIs database in Docker
+alias admindb="docker start postgres-admin postgres-ias postgres-sellers"
+
+# Start Olist webapp APIs database in Docker
+alias webdb="docker start postgres-ias postgres-sellers postgres-payments"
+
+# Open iTermocil with adminapp API
 alias adminapi="itermocil admin-services"
 
-# Open iTerm2 with web-services
+# Open iTermocil with webapp API
 alias webapi="itermocil web-services"
 
 # Postgres fix
