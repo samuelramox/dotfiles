@@ -198,6 +198,9 @@ alias adminapi="itermocil admin-services"
 # Open iTermocil with webapp API
 alias webapi="itermocil web-services"
 
+# Run webapp in Docker
+alias webapp="docker rm olist-webapp && docker run --name olist-webapp -d --env-file=.env --network host webapp"
+
 # Postgres fix
 alias psqlfix="rm /usr/local/var/postgres/postmaster.pid"
 
