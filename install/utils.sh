@@ -5,30 +5,28 @@
 # Global variables
 DOTFILES_DIRECTORY="$PWD"
 
-# Header logging
-e_header() {
+# Info message
+echo_info() {
   printf "\n$(tput setaf 3)%s$(tput sgr0)\n" "$@"
   sleep 2
 }
 
-# Success logging
-e_success() {
+# Success message
+echo_success() {
   printf "\n$(tput setaf 2)✓ %s$(tput sgr0)\n" "$@"
   sleep 2
 }
 
-# Warning logging
-e_warning() {
+# Warning message
+echo_warning() {
   printf "\n$(tput setaf 136)! %s$(tput sgr0)\n" "$@"
   sleep 2
 }
 
 # Ask for confirmation before proceeding
-seek_confirmation() {
-  printf "\n"
-  e_warning "$@"
+ask_confirmation() {
+  echo_warning "$@"
   read -p "Continue? (y/n) " -n 1
-  printf "\n"
 }
 
 # Test whether the result of an 'ask' is a confirmation
@@ -39,9 +37,9 @@ is_confirmed() {
   return 1
 }
 
-# Print a question
-ask() {
-  e_header "$1"
+# Ask for something
+ask_something() {
+  echo_info "$1"
   read -r
 }
 

@@ -285,4 +285,4 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 
 # Finish
-e_success "macOS settings updated."
+echo_success "macOS settings updated."

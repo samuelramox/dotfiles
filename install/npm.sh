@@ -9,13 +9,23 @@ if which node &> /dev/null; then
   brew install node
 fi
 
-# Packages
-npm install -g create-react-app
-npm install -g create-react-native-app
-npm install -g eslint
-npm install -g gulp-cli
-npm install -g prettier
-npm install -g sass
+# npm packages
+PACKAGES=(
+  create-react-app
+  create-react-native-app
+  eslint
+  eslint-plugin-mdx
+  gulp-cli
+  npm-check
+  prettier
+  sass
+  typescript
+)
+
+for package in ${PACKAGES[@]}
+do
+  npm install -g $package
+done
 
 # Finish
-e_success "Finished npm packages settings."
+echo_success "Finished npm packages settings."

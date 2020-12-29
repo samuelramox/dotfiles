@@ -48,6 +48,7 @@ _Check linked files to more details._
 - [.gitignore_global][] - global _gitignore_.
 - [.zshrc][] - terminal configs with aliases, paths, plugins and theme.
 - [com.googlecode.iterm2.plist][] - [iTerm2][] settings.
+- [starship.toml][] - [Starship][] theme settings.
 
 **Note:** _These files are permanent_.
 
@@ -69,18 +70,18 @@ The [setup.sh][] process will ask if you want to install the following scripts, 
   I suggest you comment apps that should not be installed and include those that are not listed. This script will install in the following order:
 
   - Install [Homebrew][].
-  - Homebrew formulas: [curl][], [Git][], [iTermocil][], [Nano][], [Node][], [nvm][], [postgresql][], [Python][], [Ruby][], [tree][], [Unrar][], [Yarn][], [Zsh][].
+  - Homebrew formulas: [curl][], [Git][], [iTermocil][], [Nano][], [Node][], [nvm][], [PostgreSQL][], [Python][], [Ruby][], [Tree][], [Unrar][], [Yarn][], [Zsh][].
   - Homebrew taps: [homebrew/fonts][], [homebrew/drivers][], [homebrew/versions][], [homebrew/command-not-found][].
-  - Homebrew casks: [Google Chrome][], [IINA][], [iTerm2][], [JetBrains Mono][], [Mumble][], [Postman][], [qBittorrent][], [Slack][], [Visual Studio Code][] and [Zoom][].
+  - Homebrew casks: [Google Chrome][], [IINA][], [iTerm2][], [JetBrains Mono][], [Mumble][], [Insomnia][], [qBittorrent][], [Slack][], [Visual Studio Code][] and [Zoom][].
   - Install [Homebrew Cask Upgrade][].
 
-- [dotfiles.sh][] - install [Oh My Zsh][], some Zsh plugins, [Spaceship ZSH][] theme and set _iTerm2_ preferences (including [Dracula Theme][]). This step also opens [.gitconfig][] so that the user can put his data.
+- [dotfiles.sh][] - install [Oh My Zsh][], some Zsh plugins, [Starship][] theme and set _iTerm2_ preferences (including [Dracula Theme][]). This step also opens [.gitconfig][] so that the user can put his data.
 - [npm.sh][] - install some npm packages.
 - [python.sh][] - install some Python packages.
 - [macos.sh][] - set custom macOS preferences.
 - [dock.sh][] - install [dockutil][] and set custom permanent apps in Dock. _Finder_ and _Recycle Bin_ are already permanent (unless you change this).
-- Generate _SSH_.
-- Update _hostname_ (MacBook name).
+- [ssh.sh][] - Generate _SSH_.
+- [hostname.sh][] - Update _hostname_ (MacBook name).
 - Create a directory called _Developer_ in _Home_ directory for projects and development.
 - Cleanup cached downloads and remove the installation zip and folder.
 
@@ -146,7 +147,7 @@ Default install (can be configured):
 - [Sensible macOS defaults][]
 - [Awesome OSX Command Line][]
 - [Oh My Zsh][]
-- [Spaceship ZSH][]
+- [Starship][]
 - [Dracula Theme][]
 
 [.gitconfig]: .gitconfig
@@ -156,6 +157,7 @@ Default install (can be configured):
 [awesome dotfiles]: https://github.com/webpro/awesome-dotfiles
 [awesome osx command line]: https://github.com/herrbischoff/awesome-osx-command-line
 [com.googlecode.iterm2.plist]: com.googlecode.iterm2.plist
+[starship.toml]: starship.toml
 [curl]: https://curl.haxx.se
 [dock.sh]: install/dock.sh
 [dockutil]: https://github.com/kcrawford/dockutil
@@ -173,6 +175,7 @@ Default install (can be configured):
 [homebrew/versions]: https://github.com/Homebrew/homebrew-cask-versions
 [hostname.sh]: install/hostname.sh
 [iina]: https://iina.io/
+[insomnia]: https://insomnia.rest
 [installation]: #installation
 [iterm2]: https://iterm2.com
 [itermocil]: https://github.com/TomAnthony/itermocil
@@ -187,7 +190,6 @@ Default install (can be configured):
 [nvm]: https://github.com/nvm-sh/nvm
 [oh my zsh]: https://ohmyz.sh
 [postgresql]: https://www.postgresql.org
-[postman]: https://www.postman.com
 [python.sh]: install/python.sh
 [python]: https://www.python.org
 [qbittorrent]: https://www.qbittorrent.org/
@@ -199,7 +201,7 @@ Default install (can be configured):
 [settings sync]: https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
 [setup.sh]: install/setup.sh
 [slack]: https://slack.com/
-[spaceship zsh]: https://denysdovhan.com/spaceship-prompt/
+[starship]: https://starship.rs
 [ssh.sh]: install/ssh.sh
 [tree]: http://mama.indstate.edu/users/ice/tree/
 [unrar]: https://www.rarlab.com/

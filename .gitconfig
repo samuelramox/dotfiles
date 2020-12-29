@@ -12,3 +12,8 @@
 	editor = nano
 	excludesfile = ~/.gitignore_global
 	trustctime = false
+[alias]
+	pr-size = diff --stat master
+[oh-my-zsh]
+	hide-dirty = 1
+  hide-status = 1
