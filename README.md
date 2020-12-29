@@ -72,7 +72,7 @@ The [setup.sh][] process will ask if you want to install the following scripts, 
   - Install [Homebrew][].
   - Homebrew formulas: [curl][], [Git][], [iTermocil][], [Nano][], [Node][], [nvm][], [PostgreSQL][], [Python][], [Ruby][], [Tree][], [Unrar][], [Yarn][], [Zsh][].
   - Homebrew taps: [homebrew/fonts][], [homebrew/drivers][], [homebrew/versions][], [homebrew/command-not-found][].
-  - Homebrew casks: [Google Chrome][], [IINA][], [iTerm2][], [JetBrains Mono][], [Mumble][], [Insomnia][], [qBittorrent][], [Slack][], [Visual Studio Code][] and [Zoom][].
+  - Homebrew casks: [Google Chrome][], [IINA][], [iTerm2][], [JetBrains Mono][], [Mumble][], [Insomnia][], [Slack][], [Visual Studio Code][] and [Zoom][].
   - Install [Homebrew Cask Upgrade][].
 
 - [dotfiles.sh][] - install [Oh My Zsh][], some Zsh plugins, [Starship][] theme and set _iTerm2_ preferences (including [Dracula Theme][]). This step also opens [.gitconfig][] so that the user can put his data.
@@ -192,7 +192,6 @@ Default install (can be configured):
 [postgresql]: https://www.postgresql.org
 [python.sh]: install/python.sh
 [python]: https://www.python.org
-[qbittorrent]: https://www.qbittorrent.org/
 [release]: https://github.com/samuelramox/dotfiles/releases
 [resources]: #resources
 [ruby]: https://www.ruby-lang.org/
