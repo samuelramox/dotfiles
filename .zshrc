@@ -95,14 +95,20 @@ alias admindb="docker start postgres-admin postgres-ias postgres-sellers"
 # Start Olist webapp APIs database
 alias webdb="docker start postgres-ias postgres-sellers postgres-payments"
 
-# Open iTermocil with admin-services
-alias adminapi="itermocil admin-services"
+# Open iTermocil with admin-local
+alias adminlocal="itermocil admin-local"
 
-# Open iTermocil with web-services
-alias webapi="itermocil web-services"
+# Open iTermocil with web-local
+alias weblocal="itermocil web-local"
+
+# Open iTermocil with admin-prod
+alias adminprod="itermocil admin-prod"
+
+# Open iTermocil with web-prod
+alias webprod="itermocil web-prod"
 
 # Run webapp in Docker
-alias webapp="docker rm olist-webapp && docker run --name olist-webapp -d --env-file=.env --network host webapp"
+alias webapp="docker rm webapp && docker run --name webapp -d --env-file=.env --network host webapp"
 
 # Django collectstatic
 alias collect="pipenv run python adminapp/manage.py collectstatic --noinput"
