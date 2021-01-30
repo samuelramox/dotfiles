@@ -89,7 +89,7 @@ The [setup.sh][] process will ask if you want to install the following scripts, 
 
 ## Manual setup
 
-[iTerm2][] settings are changed by [dotfiles.sh][] and it will look the same as [screenshot][], but you can change them manually if you prefer. My [Visual Studio Code][] settings are loaded by the [Settings Sync][] extension, so you will have to change manually or load your settings.
+[iTerm2][] settings are changed by [dotfiles.sh][] and it will look the same as [screenshot][], but you can change them manually if you prefer. My [Visual Studio Code][] settings are loaded by the [Settings Sync][], so you will have to change manually or load your settings.
 
 ### iTerm2 - Change the color theme
 
@@ -197,7 +197,7 @@ Default install (can be configured):
 [ruby]: https://www.ruby-lang.org/
 [screenshot]: #screenshot
 [sensible macos defaults]: https://github.com/mathiasbynens/dotfiles/blob/master/.macos
-[settings sync]: https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
+[settings sync]: https://code.visualstudio.com/docs/editor/settings-sync
 [setup.sh]: install/setup.sh
 [slack]: https://slack.com/
 [starship]: https://starship.rs
