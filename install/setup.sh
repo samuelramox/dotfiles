@@ -32,14 +32,6 @@ else
   echo_warning "Skipped npm settings update."
 fi
 
-# Install Python packages
-ask_confirmation "Warning: This step install Python packages."
-if is_confirmed; then
-  bash ./install/python.sh
-else
-  echo_warning "Skipped Python settings update."
-fi
-
 # Run macOS defaults
 ask_confirmation "Warning: This step may modify your macOS system defaults."
 if is_confirmed; then

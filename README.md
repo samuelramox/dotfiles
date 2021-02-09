@@ -35,7 +35,6 @@ _Check linked files to more details._
 - [hostname.sh][] - change _hostname_ (MacBook name).
 - [macos.sh][] - macOS defaults configs.
 - [npm.sh][] - install _npm_ packages.
-- [python.sh][] - install _Python_ packages.
 - [setup.sh][] - main installer.
 - [ssh.sh][] - generate _SSH_.
 - [util.sh][] - support functions for other installers.
@@ -70,14 +69,13 @@ The [setup.sh][] process will ask if you want to install the following scripts, 
   I suggest you comment apps that should not be installed and include those that are not listed. This script will install in the following order:
 
   - Install [Homebrew][].
-  - Homebrew formulas: [curl][], [Git][], [iTermocil][], [Nano][], [Node][], [nvm][], [PostgreSQL][], [Python][], [Ruby][], [Tree][], [Unrar][], [Yarn][], [Zsh][].
+  - Homebrew formulas: [curl][], [Git][], [iTermocil][], [Nano][], [Node][], [nvm][], [PostgreSQL][], [pyenv][], [Python][], [Ruby][], [Tree][], [Unrar][], [Yarn][], [Zsh][].
   - Homebrew taps: [homebrew/fonts][], [homebrew/drivers][], [homebrew/versions][], [homebrew/command-not-found][].
   - Homebrew casks: [Google Chrome][], [IINA][], [iTerm2][], [JetBrains Mono][], [Mumble][], [Insomnia][], [Slack][], [Visual Studio Code][] and [Zoom][].
   - Install [Homebrew Cask Upgrade][].
 
 - [dotfiles.sh][] - install [Oh My Zsh][], some Zsh plugins, [Starship][] theme and set _iTerm2_ preferences (including [Dracula Theme][]). This step also opens [.gitconfig][] so that the user can put his data.
 - [npm.sh][] - install some npm packages.
-- [python.sh][] - install some Python packages.
 - [macos.sh][] - set custom macOS preferences.
 - [dock.sh][] - install [dockutil][] and set custom permanent apps in Dock. _Finder_ and _Recycle Bin_ are already permanent (unless you change this).
 - [ssh.sh][] - Generate _SSH_.
@@ -99,7 +97,7 @@ You can use the default theme or switch to your preferred theme. I use [Dracula 
 
 ### iTerm2 - Change font
 
-You can use the default font or switch to your preferred font. I use [JetBrains Mono][] with 13px.
+You can use the default font or switch to your preferred font. I use [JetBrains Mono][] with 12px.
 
 `iTerm2 → Preferences → Profiles → Text → Change Font`
 
@@ -116,9 +114,9 @@ By default, word jumps (`option` + `→` or `←`) and word deletions (`option` 
 ```json
 "editor.fontFamily": "JetBrains Mono",
 "editor.fontLigatures": true,
-"editor.fontSize": 13,
+"editor.fontSize": 12,
 "terminal.integrated.fontFamily": "JetBrains Mono",
-"terminal.integrated.fontSize": 13,
+"terminal.integrated.fontSize": 12,
 ```
 
 ### Visual Studio Code - Configurable External Terminal
@@ -190,7 +188,7 @@ Default install (can be configured):
 [nvm]: https://github.com/nvm-sh/nvm
 [oh my zsh]: https://ohmyz.sh
 [postgresql]: https://www.postgresql.org
-[python.sh]: install/python.sh
+[pyenv]: https://github.com/pyenv/pyenv
 [python]: https://www.python.org
 [release]: https://github.com/samuelramox/dotfiles/releases
 [resources]: #resources

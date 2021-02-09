@@ -24,6 +24,7 @@ git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-
 # The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 # Check out https://starship.rs for more details
 brew install starship
+mkdir ${HOME}/.config
 replace "starship.toml" ".config/starship.toml"
 
 # Set Dracula theme and preferences for iTerm2
