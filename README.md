@@ -69,7 +69,7 @@ The [setup.sh][] process will ask if you want to install the following scripts, 
   I suggest you comment apps that should not be installed and include those that are not listed. This script will install in the following order:
 
   - Install [Homebrew][].
-  - Homebrew formulas: [curl][], [Git][], [iTermocil][], [Nano][], [Node][], [nvm][], [PostgreSQL][], [pyenv][], [Python][], [Ruby][], [Tree][], [Unrar][], [Yarn][], [Zsh][].
+  - Homebrew formulas: [curl][], [Git][], [iTermocil][], [Nano][], [Node][], [nvm][], [PostgreSQL][], [pyenv][], [Python][], [Ruby][], [Tree][], [Yarn][], [Zsh][].
   - Homebrew taps: [homebrew/fonts][], [homebrew/drivers][], [homebrew/versions][], [homebrew/command-not-found][].
   - Homebrew casks: [Google Chrome][], [IINA][], [iTerm2][], [JetBrains Mono][], [Mumble][], [Insomnia][], [Slack][], [Visual Studio Code][] and [Zoom][].
   - Install [Homebrew Cask Upgrade][].
@@ -201,7 +201,6 @@ Default install (can be configured):
 [starship]: https://starship.rs
 [ssh.sh]: install/ssh.sh
 [tree]: http://mama.indstate.edu/users/ice/tree/
-[unrar]: https://www.rarlab.com/
 [util.sh]: install/util.sh
 [visual studio code]: https://code.visualstudio.com
 [what are dotfiles]: #what-are-dotfiles
