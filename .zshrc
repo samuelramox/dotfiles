@@ -6,10 +6,10 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Homebrew path
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # curl path
-export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 # Gettext path
 export PATH="/usr/local/opt/gettext/bin:$PATH"
@@ -24,10 +24,10 @@ export NVM_AUTO_USE=true
 eval "$(pyenv init -)"
 
 # Python 3 path (use only without pyenv)
-# export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# export PATH="/opt/homebrew/opt/python/libexec/bin"
 
 # Ruby path
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$(gem environment gemdir)/bin:$PATH"
 
 # SSL path
@@ -54,7 +54,7 @@ plugins=(
 )
 
 # Homebrew Command Not Found
-HB_CNF_HANDLER="$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+HB_CNF_HANDLER="/opt/homebrew/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
 if [ -f "$HB_CNF_HANDLER" ]; then
   source "$HB_CNF_HANDLER";
 fi
@@ -121,4 +121,4 @@ ZSH_THEME=""
 eval "$(starship init zsh)"
 
 # Starship path to load .config
-export PATH="/usr/local/opt/starship/bin:$PATH"
+export PATH="/opt/homebrew/opt/starship/bin:$PATH"

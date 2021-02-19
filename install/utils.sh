@@ -4,6 +4,7 @@
 
 # Global variables
 DOTFILES_DIRECTORY="$PWD"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Info message
 echo_info() {
