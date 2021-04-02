@@ -31,6 +31,7 @@ done
 
 # Install Homebrew formulas
 FORMULAS=(
+  aws-google-auth
   curl
   git
   heroku
